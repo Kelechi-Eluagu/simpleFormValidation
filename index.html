@@ -29,7 +29,7 @@
       </div>
     </nav>
     <section class="container bg-light py-3 py-md-4 px-2 px-md-5 mt-3 mt-md-4 mt-lg-5">
-      <div class="row py-2 py-md-4 px-3 px-md-4">
+      <div class="row py-2 py-md-4 px-2 px-md-4 mx-0 mx-md-3 mx-lg-5">
         <header class="col-12 text-center">
           <div><i class="fa fa-user fa-4x text-brown"></i></div>
           <h3>Register with Remita</h3>
@@ -37,23 +37,27 @@
           <p class="small">Please enter your details below</p>
         </header>
         <form class="form-group col-12 row" method="POST">
-          <div class="col-12 col-md-6 mb-3 mb-md-4 mt-2 mt-md-3">
+          <div class="col-12 col-md-6 mb-1 mb-md-2 mt-2 mt-md-3">
             <label class="font-weight-bold">Email Address<sup><i class="fa fa-star text-brown"></i></sup></label>
             <input type="name" id="name" class="form-control bg-white" placeholder="Enter Email Address">
+            <div id="error-email"></div>
           </div>
-          <div class="col-12 col-md-6 mb-3 mb-md-4 mt-2 mt-md-3">
+          <div class="col-12 col-md-6 mb-1 mb-md-2 mt-2 mt-md-3">
             <label class="font-weight-bold">Phone Number<sup><i class="fa fa-star text-brown"></i></sup></label>
             <input type="tel" id="phone" class="form-control bg-white" placeholder="Enter Phone Number">
+            <p id="error-phone"></p>
           </div>
-          <div class="col-12 col-md-6 mb-3 mb-md-4">
+          <div class="col-12 col-md-6 mb-1 mb-md-2">
             <label class="font-weight-bold">First Name<sup><i class="fa fa-star text-brown"></i></sup></label>
             <input type="name" id="firstName" class="form-control bg-white" placeholder="Enter First Name">
+            <p id="error-first"></p>
           </div>
-          <div class="col-12 col-md-6 mb-3 mb-md-4">
+          <div class="col-12 col-md-6 mb-1 mb-md-2">
             <label class="font-weight-bold">Last Name<sup><i class="fa fa-star text-brown"></i></sup></label>
             <input type="name" id="lastName" class="form-control bg-white" placeholder="Enter Last Name">
+            <p id="error-last"></p>
           </div>
-          <div class="col-12 mb-3 mb-md-4">
+          <div class="col-12 mb-1 mb-md-2">
             <label class="font-weight-bold">This Registration is for<sup><i class="fa fa-star text-brown"></i></sup></label><br>
             <!-- <div class="col-12"></div> -->
             <select class="col-12">
@@ -63,12 +67,13 @@
                 <option value="">My Personal Account</option>
                 <option value="">My Personal Account</option>
             </select>
+            <p id="error-select"></p>
           </div>
 
         <div class="g-recaptcha col-12 mb-2" data-sitekey="your_site_key" value="dark light"></div><br>
 
-        <button class="btn bg-btn ml-3 border-0 text-white py-3 px-4 mt-1 mt-md-2">
-          NEXT <i class="fa fa-caret-right text-white ml-3" type="submit" onsubmit="check()"></i>
+        <button class="btn bg-btn ml-3 border-0 text-white py-3 px-4 mt-1 mt-md-2" onsubmit="return validate()">
+          NEXT <i class="fa fa-caret-right text-white ml-3" type="submit"></i>
         </button>
         </form>
       </div>
