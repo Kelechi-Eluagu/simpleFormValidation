@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" type="text/css" href="./css/font-awesome/css/font-awesome.min.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+    <title>simple-form</title>
+    <script type="text/javascript">
+      var onloadCallback = function() {
+      alert("grecaptcha is ready!");
+    };
+</script>
+  </head>
+  <body>
+ <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-brown px-4 px-md-5">
+      <a class="navbar-brand py-2 py-md-3" href="#">
+        <img src="./remita_logo_white.png" width="100" height="40" alt="remita-logo">
+      </a>
+      <div class="navbar-collapse d-none d-md-block" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-md-auto text-white font-weight-bold">
+          <li class="pr-5">ABOUT</li>
+          <li class="pr-5">REMITA MOBILE</li>
+          <li class="pr-5">DEVELOPERS</li>
+        </ul>
+      </div>
+    </nav>
+    <section class="container bg-light py-3 py-md-4 px-2 px-md-5 mt-3 mt-md-4 mt-lg-5">
+      <div class="row py-2 py-md-4 px-3 px-md-4">
+        <header class="col-12 text-center">
+          <div><i class="fa fa-user fa-4x text-brown"></i></div>
+          <h3>Register with Remita</h3>
+          <p class="d-block d-md-none">Please enter your details below</p>
+          <p class="small">Please enter your details below</p>
+        </header>
+        <form class="form-group col-12 row" method="POST">
+          <div class="col-12 col-md-6">
+            <label class="font-weight-bold">Email Address<sup><i class="fa fa-star text-brown"></i></sup></label>
+            <input type="name" id="name" class="form-control bg-white" placeholder="Enter Email Address">
+          </div>
+          <div class="col-12 col-md-6">
+            <label class="font-weight-bold">Phone Number<sup><i class="fa fa-star text-brown"></i></sup></label>
+            <input type="tel" id="phone" class="form-control bg-white" placeholder="Enter Email Address">
+          </div>
+          <div class="col-12 col-md-6">
+            <label class="font-weight-bold">First Name<sup><i class="fa fa-star text-brown"></i></sup></label>
+            <input type="name" id="firstName" class="form-control bg-white" placeholder="Enter First Name">
+          </div>
+          <div class="col-12 col-md-6">
+            <label class="font-weight-bold">Last Name<sup><i class="fa fa-star text-brown"></i></sup></label>
+            <input type="name" id="lastName" class="form-control bg-white" placeholder="Enter Last Name">
+          </div>
+          <div class="col-12">
+            <label class="font-weight-bold">This Registration is for<sup><i class="fa fa-star text-brown"></i></sup></label><br>
+            <select>
+                <option value="" disabled selected class="form-control">Please Select From - Self/SME/Corporate etc</option>
+                <!-- <option value="">Please Select From - Self/SME/Corporate etc</option> -->
+                <option value="">My Personal Account</option>
+                <option value="">My Personal Account</option>
+                <option value="">My Personal Account</option>
+            </select>
+          </div>
+
+        <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+
+        </form>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

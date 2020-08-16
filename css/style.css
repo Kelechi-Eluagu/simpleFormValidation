@@ -1,0 +1,13 @@
+.bg-brown {
+  background-color: #C55527;
+  padding: 0;
+  margin: 0;
+}
+ul, ol {
+  list-style-type: none;
+  text-decoration: none;
+  color: inherit;
+}
+i {
+  color: #C55527;
+}
