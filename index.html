@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <link rel="stylesheet" type="text/css" href="./css/font-awesome/css/font-awesome.min.css" />
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="./css/font-awesome/css/font-awesome.min.css" />
+      <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
@@ -36,31 +36,34 @@
           <p class="d-block d-md-none">Please enter your details below</p>
           <p class="small">Please enter your details below</p>
         </header>
-        <form class="form-group col-12 row" method="POST">
+        <form class="form-group col-12 row" action="" method="GET" enctype="multi-part/form-data">
 
           <div class="col-12 col-md-6 mb-1 mb-md-2 mt-2 mt-md-3">
-            <label class="font-weight-bold">Email Address<sup><i class="fa fa-star text-brown"></i></sup></label>
-            <input type="name" id="name" class="form-control bg-white" placeholder="Enter Email Address">
+            <label for="email" class="font-weight-bold">Email Address<sup><i class="fa fa-star text-brown"></i></sup></label>
+            <input type="email" id="email" name="email" class="form-control bg-white" placeholder="Enter Email Address">
             <div id="error-email" class="text-black"></div>
           </div>
 
           <div class="col-12 col-md-6 mb-1 mb-md-2 mt-2 mt-md-3">
-            <label class="font-weight-bold">Phone Number<sup><i class="fa fa-star text-brown"></i></sup></label>
-            <input type="tel" id="phone" class="form-control bg-white" placeholder="Enter Phone Number">
-            <p id="error-phone"></p>
+            <label for="phone" class="font-weight-bold">Phone Number<sup><i class="fa fa-star text-brown"></i></sup></label>
+            <input type="tel" id="phone" name="phone" class="form-control bg-white" placeholder="Enter Phone Number">
+            <div id="error-phone"></div>
           </div>
+
           <div class="col-12 col-md-6 mb-1 mb-md-2">
-            <label class="font-weight-bold">First Name<sup><i class="fa fa-star text-brown"></i></sup></label>
-            <input type="name" id="firstName" class="form-control bg-white" placeholder="Enter First Name">
-            <p id="error-first"></p>
+            <label for="firstName" class="font-weight-bold">First Name<sup><i class="fa fa-star text-brown"></i></sup></label>
+            <input type="text" id="firstName" name="firstName" class="form-control bg-white" placeholder="Enter First Name">
+            <p id="error-first" class="w-100"></p>
           </div>
+
           <div class="col-12 col-md-6 mb-1 mb-md-2">
-            <label class="font-weight-bold">Last Name<sup><i class="fa fa-star text-brown"></i></sup></label>
-            <input type="name" id="lastName" class="form-control bg-white" placeholder="Enter Last Name">
+            <label for="lastName" class="font-weight-bold">Last Name<sup><i class="fa fa-star text-brown"></i></sup></label>
+            <input type="text" id="lastName" name="lastName" class="form-control bg-white" placeholder="Enter Last Name">
             <p id="error-last"></p>
           </div>
+
           <div class="col-12 mb-1 mb-md-2">
-            <label class="font-weight-bold">This Registration is for<sup><i class="fa fa-star text-brown"></i></sup></label><br>
+            <label for="select" class="font-weight-bold">This Registration is for<sup><i class="fa fa-star text-brown"></i></sup></label><br>
             <!-- <div class="col-12"></div> -->
             <select class="col-12">
                 <option value="" disabled selected class="form-control">Please Select From - Self/SME/Corporate etc</option>
