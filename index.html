@@ -15,6 +15,9 @@
       alert("grecaptcha is ready!");
     };
 </script>
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+    async defer>
+</script>
   </head>
   <body>
  <!-- navbar -->
@@ -39,25 +42,26 @@
           <p class="small">Please enter your details below</p>
         </header>
         <form class="form-group col-12 row" method="POST">
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-6 mb-3 mb-md-4 mt-2 mt-md-3">
             <label class="font-weight-bold">Email Address<sup><i class="fa fa-star text-brown"></i></sup></label>
             <input type="name" id="name" class="form-control bg-white" placeholder="Enter Email Address">
           </div>
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-6 mb-3 mb-md-4 mt-2 mt-md-3">
             <label class="font-weight-bold">Phone Number<sup><i class="fa fa-star text-brown"></i></sup></label>
-            <input type="tel" id="phone" class="form-control bg-white" placeholder="Enter Email Address">
+            <input type="tel" id="phone" class="form-control bg-white" placeholder="Enter Phone Number">
           </div>
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-6 mb-3 mb-md-4">
             <label class="font-weight-bold">First Name<sup><i class="fa fa-star text-brown"></i></sup></label>
             <input type="name" id="firstName" class="form-control bg-white" placeholder="Enter First Name">
           </div>
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-6 mb-3 mb-md-4">
             <label class="font-weight-bold">Last Name<sup><i class="fa fa-star text-brown"></i></sup></label>
             <input type="name" id="lastName" class="form-control bg-white" placeholder="Enter Last Name">
           </div>
-          <div class="col-12">
+          <div class="col-12 mb-3 mb-md-4">
             <label class="font-weight-bold">This Registration is for<sup><i class="fa fa-star text-brown"></i></sup></label><br>
-            <select>
+            <!-- <div class="col-12"></div> -->
+            <select class="col-12">
                 <option value="" disabled selected class="form-control">Please Select From - Self/SME/Corporate etc</option>
                 <!-- <option value="">Please Select From - Self/SME/Corporate etc</option> -->
                 <option value="">My Personal Account</option>
@@ -66,8 +70,11 @@
             </select>
           </div>
 
-        <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+        <div class="g-recaptcha" data-sitekey="your_site_key" value="dark light"></div>
 
+        <button class="btn bg-btn ml-3 border-0 text-white py-3 px-4 mt-1 mt-md-2">
+          NEXT <i class="fa fa-caret-right text-white ml-3"></i>
+        </button>
         </form>
       </div>
     </section>
