@@ -52,7 +52,7 @@
 
           <div class="col-12 col-md-6 mb-1 mb-md-2">
             <label for="firstName" class="font-weight-bold">First Name<sup><i class="fa fa-star text-brown"></i></sup></label>
-            <input type="text" id="firstName" name="firstName" class="form-control bg-white" placeholder="Enter First Name">
+            <input type="text" id="firstName" name="firstName" class="form-control bg-white" placeholder="Enter First Name" value="">
             <p id="error-first" class="w-100"></p>
           </div>
 
@@ -77,8 +77,8 @@
 
         <div class="g-recaptcha col-12 mb-2" data-sitekey="your_site_key" value="dark light"></div><br>
 
-        <button class="btn bg-btn ml-3 border-0 text-white py-3 px-4 mt-1 mt-md-2" onsubmit="return validate()">
-          NEXT <i class="fa fa-caret-right text-white ml-3" type="submit"></i>
+        <button class="btn bg-btn ml-3 border-0 text-white py-3 px-4 mt-1 mt-md-2" onsubmit="return validate()" type="submit">
+          NEXT <i class="fa fa-caret-right text-white ml-3"></i>
         </button>
         </form>
       </div>

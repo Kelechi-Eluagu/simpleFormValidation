@@ -3,11 +3,11 @@
 //     };
 
 function validate() {
-  let email = document.getElementById('email').value;
-  let phone = document.getElementById('phone').value;
+  // let email = document.getElementById('email').value;
+  // let phone = document.getElementById('phone').value;
   let firstName = document.getElementById('firstName').value;
-  let lastName = document.getElementById('lastName').value;
-  let errorEmail = document.getElementById('error-email');
+  // let lastName = document.getElementById('lastName').value;
+  // let errorEmail = document.getElementById('error-email');
   // let errorEmail = document.getElementById('error-email');
   let errorFirst = document.getElementById('error-first');
   let message;
