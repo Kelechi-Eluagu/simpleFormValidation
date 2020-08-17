@@ -1,26 +1,51 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-      <link rel="stylesheet" type="text/css" href="./css/font-awesome/css/font-awesome.min.css" />
-      <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <title>simple-form</title>
-<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explici"
-    async defer>
-</script>
+    <script
+      src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explici"
+      async
+      defer
+    ></script>
   </head>
   <body>
- <!-- navbar -->
+    <!-- navbar -->
     <nav class="navbar navbar-expand-md navbar-dark bg-brown px-4 px-md-5">
       <a class="navbar-brand py-2 py-md-3" href="#">
-        <img src="./remita_logo_white.png" width="100" height="40" alt="remita-logo">
+        <img
+          src="./remita_logo_white.png"
+          width="100"
+          height="40"
+          alt="remita-logo"
+        />
       </a>
-      <div class="navbar-collapse d-none d-md-block" id="navbarSupportedContent">
+      <div
+        class="navbar-collapse d-none d-md-block"
+        id="navbarSupportedContent"
+      >
         <ul class="navbar-nav ml-md-auto text-white font-weight-bold">
           <li class="pr-5">ABOUT</li>
           <li class="pr-5">REMITA MOBILE</li>
@@ -28,7 +53,9 @@
         </ul>
       </div>
     </nav>
-    <section class="container bg-light py-3 py-md-4 px-2 px-md-5 mt-3 mt-md-4 mt-lg-5">
+    <section
+      class="container bg-light py-3 py-md-4 px-2 px-md-5 mt-3 mt-md-4 mt-lg-5"
+    >
       <div class="row py-2 py-md-4 px-2 px-md-4 mx-0 mx-md-3 mx-lg-5">
         <header class="col-12 text-center">
           <div><i class="fa fa-user fa-4x text-brown"></i></div>
@@ -36,61 +63,122 @@
           <p class="d-block d-md-none">Please enter your details below</p>
           <p class="small">Please enter your details below</p>
         </header>
-        <form class="form-group col-12 row" action="" method="POAT" enctype="multi-part/form-data">
-
+        <form
+          class="form-group col-12 row"
+          id="form"
+          action=""
+          method=""
+          enctype="multi-part/form-data"
+        >
           <div class="col-12 col-md-6 mb-1 mb-md-2 mt-2 mt-md-3">
-            <label for="email" class="font-weight-bold">Email Address<sup><i class="fa fa-star text-brown"></i></sup></label>
-            <input type="email" id="email" name="email" class="form-control bg-white" placeholder="Enter Email Address">
-            <div id="error-email" class="text-black"></div>
+            <label for="email" class="font-weight-bold"
+              >Email Address<sup><i class="fa fa-star text-brown"></i></sup
+            ></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-control bg-white"
+              placeholder="Enter Email Address"
+            />
+            <small class="error-block text-black"></small>
           </div>
 
           <div class="col-12 col-md-6 mb-1 mb-md-2 mt-2 mt-md-3">
-            <label for="phone" class="font-weight-bold">Phone Number<sup><i class="fa fa-star text-brown"></i></sup></label>
-            <input type="tel" id="phone" name="phone" class="form-control bg-white" placeholder="Enter Phone Number">
-            <div id="error-phone"></div>
+            <label for="phone" class="font-weight-bold"
+              >Phone Number<sup><i class="fa fa-star text-brown"></i></sup
+            ></label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              class="form-control bg-white"
+              placeholder="Enter Phone Number"
+            />
+            <small class="error-block"></small>
           </div>
 
           <div class="col-12 col-md-6 mb-1 mb-md-2">
-            <label for="firstName" class="font-weight-bold">First Name<sup><i class="fa fa-star text-brown"></i></sup></label>
-            <input type="text" id="firstName" name="firstName" class="form-control bg-white" placeholder="Enter First Name" value="">
-            <p id="error-first" class="w-100"></p>
+            <label for="firstName" class="font-weight-bold"
+              >First Name<sup><i class="fa fa-star text-brown"></i></sup
+            ></label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              class="form-control bg-white"
+              placeholder="Enter First Name"
+            />
+            <small class="error-block" class="w-100"></small>
           </div>
 
           <div class="col-12 col-md-6 mb-1 mb-md-2">
-            <label for="lastName" class="font-weight-bold">Last Name<sup><i class="fa fa-star text-brown"></i></sup></label>
-            <input type="text" id="lastName" name="lastName" class="form-control bg-white" placeholder="Enter Last Name">
-            <p id="error-last"></p>
+            <label for="lastName" class="font-weight-bold"
+              >Last Name<sup><i class="fa fa-star text-brown"></i></sup
+            ></label>
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              class="form-control bg-white"
+              placeholder="Enter Last Name"
+            />
+            <small class="error-block"></small>
           </div>
 
           <div class="col-12 mb-1 mb-md-2">
-            <label for="select" class="font-weight-bold">This Registration is for<sup><i class="fa fa-star text-brown"></i></sup></label><br>
+            <label for="select" class="font-weight-bold"
+              >This Registration is for<sup
+                ><i class="fa fa-star text-brown"></i></sup></label
+            ><br />
             <!-- <div class="col-12"></div> -->
             <select class="col-12">
-                <option value="" disabled selected class="form-control">Please Select From - Self/SME/Corporate etc</option>
-                <!-- <option value="">Please Select From - Self/SME/Corporate etc</option> -->
-                <option value="">My Personal Account</option>
-                <option value="">My Personal Account</option>
-                <option value="">My Personal Account</option>
+              <option value="" disabled selected class="form-control"
+                >Please Select From - Self/SME/Corporate etc</option
+              >
+              <!-- <option value="">Please Select From - Self/SME/Corporate etc</option> -->
+              <option value="">My Personal Account</option>
+              <option value="">My Personal Account</option>
+              <option value="">My Personal Account</option>
             </select>
-            <p id="error-select"></p>
+            <small class="error-block"></small>
           </div>
 
-        <div class="g-recaptcha col-12 mb-2" data-sitekey="your_site_key" value="dark light"></div><br>
+          <div
+            class="g-recaptcha col-12 mb-2"
+            data-sitekey="your_site_key"
+            value="dark light"
+          ></div>
+          <br />
 
-        <button class="btn bg-btn ml-3 border-0 text-white py-3 px-4 mt-1 mt-md-2" onsubmit="return validate()" type="submit">
-          NEXT <i class="fa fa-caret-right text-white ml-3"></i>
-        </button>
+          <button
+            class="btn bg-btn ml-3 border-0 text-white py-3 px-4 mt-1 mt-md-2"
+            onsubmit="return validate()"
+            type="submit"
+          >
+            NEXT <i class="fa fa-caret-right text-white ml-3"></i>
+          </button>
         </form>
       </div>
     </section>
 
-    <footer>
-      
-    </footer>
+    <footer></footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
     <script type="text/javascript" src="./js/index.js"></script>
   </body>
 </html>
